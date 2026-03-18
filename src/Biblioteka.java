@@ -27,4 +27,20 @@ public class Biblioteka {
         }
         return null;
     }
+    public void wypozyczKsiazke(String tytul, Czytelnik c) {
+        Ksiazka k = znajdzKsiazke(tytul);
+        if (k != null) {
+            k.wypozycz();
+            c.zwiekszLiczbeWyporzyczen();
+        } else {
+            System.out.println("Nie znaleziono ksiazki");
+        }
+    }
+    public void zwrocKsiazke(String tytul, Czytelnik c) {
+        Ksiazka k = znajdzKsiazke(tytul);
+        if (k != null) {
+            k.zwroc();
+            c.zmniejszLiczbeWyporzyczen();
+        }
+    }
 }

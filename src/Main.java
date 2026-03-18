@@ -26,6 +26,17 @@ public class Main {
         System.out.println();
         System.out.println("Lista ksiazek:");
         b.wypiszDostepneKsiazki();
+
+        System.out.println();
+        System.out.println("Wypozyczanie:");
+        b.wypozyczKsiazke("Ksiazka", c1);
+        System.out.println();
+        b.wypiszDostepneKsiazki();
+        System.out.println();
+        System.out.println("Zwrot:");
+        b.zwrocKsiazke("Ksiazka", c1);
+        System.out.println();
+        b.wypiszDostepneKsiazki();
     }
 
 }
