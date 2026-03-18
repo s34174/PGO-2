@@ -35,5 +35,8 @@ public class Ksiazka {
         System.out.println("Zwrocono");
 
     }
+    public String getTytul(){
+        return tytul;
+    }
 }
 

@@ -17,6 +17,15 @@ public class Main {
         c1.wypiszDane();
         c1.zmniejszLiczbeWyporzyczen();
         c1.wypiszDane();
+
+        Biblioteka b =new Biblioteka(10);
+
+        b.dodajKsiazke(k1);
+        b.dodajKsiazke(k2);
+        b.dodajKsiazke(k3);
+        System.out.println();
+        System.out.println("Lista ksiazek:");
+        b.wypiszDostepneKsiazki();
     }
 
 }
